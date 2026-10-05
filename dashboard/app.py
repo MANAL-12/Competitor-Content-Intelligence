@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-
+from streamlit_autorefresh import st_autorefresh
 
 # ============================================================
 # PATH SETUP
@@ -33,7 +33,10 @@ st.set_page_config(
     layout="wide"
 )
 
-
+st_autorefresh(
+    interval=60 * 1000,
+    key="dashboard_refresh"
+)
 # ============================================================
 # DATABASE
 # ============================================================
