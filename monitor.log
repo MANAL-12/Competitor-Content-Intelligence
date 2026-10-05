@@ -550,3 +550,10 @@ ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FA
 2026-10-05 20:13:30,409 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
 2026-10-05 20:13:33,391 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
 2026-10-05 20:13:33,392 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:13:51,604 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8563 | processed=5 | new=5 | errors=0
+2026-10-05 20:13:51,606 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:13:53,655 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:13:53,655 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:13:53,656 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:14:16,092 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2670 | processed=5 | new=5 | errors=0
+2026-10-05 20:14:16,094 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
