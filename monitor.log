@@ -534,3 +534,11 @@ ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FA
 2026-10-05 20:12:27,805 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
 2026-10-05 20:12:27,805 | INFO | START COMPETITOR CHECK | Docker Blog
 2026-10-05 20:12:27,807 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:13:12,869 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1594 | processed=5 | new=5 | errors=0
+2026-10-05 20:13:12,870 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:13:14,235 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:13:14,236 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=138.59 seconds
+2026-10-05 20:13:15,238 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:13:15,239 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:13:15,240 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:13:16,995 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
