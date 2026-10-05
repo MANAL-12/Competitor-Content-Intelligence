@@ -557,3 +557,6 @@ ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FA
 2026-10-05 20:13:53,656 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
 2026-10-05 20:14:16,092 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2670 | processed=5 | new=5 | errors=0
 2026-10-05 20:14:16,094 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:14:17,718 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:14:17,718 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:14:17,719 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
