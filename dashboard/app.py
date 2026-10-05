@@ -1,5 +1,8 @@
 import sys
 from pathlib import Path
+from datetime import datetime, timezone, timedelta
+
+from dateutil import parser as date_parser
 
 import pandas as pd
 import streamlit as st
@@ -49,8 +52,45 @@ initialize_database()
 # ============================================================
 
 articles = get_all_articles()
-
 monitoring_status = get_monitoring_status()
+
+# ============================================================
+# RECENT ARTICLES
+# ============================================================
+
+recent_cutoff = (
+    datetime.now(timezone.utc)
+    - timedelta(hours=48)
+)
+
+recent_articles = []
+
+for article in articles:
+
+    published_at = article.get("published_at")
+
+    if not published_at:
+        continue
+
+    try:
+        published = date_parser.parse(
+            str(published_at)
+        )
+
+        if published.tzinfo is None:
+            published = published.replace(
+                tzinfo=timezone.utc
+            )
+
+        published = published.astimezone(
+            timezone.utc
+        )
+
+        if published >= recent_cutoff:
+            recent_articles.append(article)
+
+    except (ValueError, TypeError, OverflowError):
+        continue
 
 
 # Convert article data to DataFrame
