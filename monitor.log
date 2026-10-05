@@ -565,3 +565,29 @@ ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FA
 2026-10-05 20:14:37,441 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
 2026-10-05 20:14:37,441 | INFO | START COMPETITOR CHECK | Docker Blog
 2026-10-05 20:14:37,442 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:15:24,355 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1589 | processed=5 | new=5 | errors=0
+2026-10-05 20:15:24,357 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:15:25,712 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:15:25,713 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=130.47 seconds
+2026-10-05 20:15:26,715 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:15:26,716 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:15:26,716 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:15:28,699 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:15:28,700 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:15:42,721 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=250 | processed=5 | new=5 | errors=0
+2026-10-05 20:15:42,721 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:15:43,776 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:15:43,777 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:15:43,778 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:15:45,497 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:15:45,498 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:16:03,527 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8558 | processed=5 | new=5 | errors=0
+2026-10-05 20:16:03,530 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:16:05,313 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:16:05,314 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:16:05,317 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:16:30,416 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2665 | processed=5 | new=5 | errors=0
+2026-10-05 20:16:30,425 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:16:32,359 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:16:32,360 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:16:32,360 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
