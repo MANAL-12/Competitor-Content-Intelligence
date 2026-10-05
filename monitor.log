@@ -1,0 +1,536 @@
+2026-09-28 20:17:47,855 | INFO | Monitoring started.
+2026-09-28 20:17:47,856 | INFO | Configured feeds: 1 | Interval: 60 seconds
+2026-09-28 20:17:47,856 | INFO | Starting monitoring cycle.
+2026-09-28 20:17:47,857 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:17:48,456 | ERROR | Feed check failed for Python Blog
+Traceback (most recent call last):
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\detection\monitor.py", line 59, in check_feed
+    if save_article(article):
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\database\db.py", line 47, in save_article
+    cursor = connection.execute("""
+        INSERT OR IGNORE INTO articles (
+    ...<20 lines>...
+        now,
+    ))
+sqlite3.OperationalError: 8 values for 9 columns
+2026-09-28 20:17:48,477 | INFO | Monitoring cycle finished at 2026-09-28T14:47:48.477039+00:00. Sleeping for 60 seconds.
+2026-09-28 20:18:48,480 | INFO | Starting monitoring cycle.
+2026-09-28 20:18:48,485 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:18:48,832 | ERROR | Feed check failed for Python Blog
+Traceback (most recent call last):
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\detection\monitor.py", line 59, in check_feed
+    if save_article(article):
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\database\db.py", line 47, in save_article
+    cursor = connection.execute("""
+        INSERT OR IGNORE INTO articles (
+    ...<20 lines>...
+        now,
+    ))
+sqlite3.OperationalError: 8 values for 9 columns
+2026-09-28 20:18:48,834 | INFO | Monitoring cycle finished at 2026-09-28T14:48:48.834674+00:00. Sleeping for 60 seconds.
+2026-09-28 20:19:38,393 | INFO | Monitoring stopped by user.
+2026-09-28 20:19:49,222 | INFO | Monitoring started.
+2026-09-28 20:19:49,223 | INFO | Configured feeds: 1 | Interval: 60 seconds
+2026-09-28 20:19:49,223 | INFO | Starting monitoring cycle.
+2026-09-28 20:19:49,223 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:19:50,117 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:19:50,117 | INFO | Monitoring cycle finished at 2026-09-28T14:49:50.117676+00:00. Sleeping for 60 seconds.
+2026-09-28 20:20:50,118 | INFO | Starting monitoring cycle.
+2026-09-28 20:20:50,119 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:20:51,050 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:20:51,050 | INFO | Monitoring cycle finished at 2026-09-28T14:50:51.050932+00:00. Sleeping for 60 seconds.
+2026-09-28 20:21:51,051 | INFO | Starting monitoring cycle.
+2026-09-28 20:21:51,052 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:21:51,991 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:21:51,992 | INFO | Monitoring cycle finished at 2026-09-28T14:51:51.991985+00:00. Sleeping for 60 seconds.
+2026-09-28 20:22:13,286 | INFO | Monitoring stopped by user.
+2026-09-28 20:25:12,945 | INFO | Monitoring started.
+2026-09-28 20:25:12,946 | INFO | Configured feeds: 1 | Interval: 60 seconds
+2026-09-28 20:25:12,946 | INFO | Starting monitoring cycle.
+2026-09-28 20:25:12,947 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:25:13,862 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:25:13,863 | INFO | Monitoring cycle finished at 2026-09-28T14:55:13.863181+00:00. Sleeping for 60 seconds.
+2026-09-28 20:26:13,864 | INFO | Starting monitoring cycle.
+2026-09-28 20:26:13,865 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:26:15,088 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:26:15,089 | INFO | Monitoring cycle finished at 2026-09-28T14:56:15.088932+00:00. Sleeping for 60 seconds.
+2026-09-28 20:26:22,372 | INFO | Monitoring stopped by user.
+2026-09-28 20:26:50,009 | INFO | Monitoring started.
+2026-09-28 20:26:50,010 | INFO | Configured feeds: 2 | Interval: 60 seconds
+2026-09-28 20:26:50,011 | INFO | Starting monitoring cycle.
+2026-09-28 20:26:50,013 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:26:51,098 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:26:51,099 | INFO | Checking Real Python: https://realpython.com/atom.xml
+2026-09-28 20:26:51,596 | ERROR | Failed to monitor Real Python
+Traceback (most recent call last):
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\detection\monitor.py", line 122, in run_monitor
+    monitor_site(site)
+    ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\detection\monitor.py", line 72, in monitor_site
+    articles = collect_rss_articles(feed_url)
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\collectors\rss_collector.py", line 22, in collect_rss_articles
+    raise ValueError(
+        f"Could not parse the feed: {feed.bozo_exception}"
+    )
+ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1020)>
+2026-09-28 20:26:51,618 | INFO | Monitoring cycle finished at 2026-09-28T14:56:51.618345+00:00. Sleeping for 60 seconds.
+2026-09-28 20:27:51,619 | INFO | Starting monitoring cycle.
+2026-09-28 20:27:51,621 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:27:52,555 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:27:52,556 | INFO | Checking Real Python: https://realpython.com/atom.xml
+2026-09-28 20:27:52,706 | ERROR | Failed to monitor Real Python
+Traceback (most recent call last):
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\detection\monitor.py", line 122, in run_monitor
+    monitor_site(site)
+    ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\detection\monitor.py", line 72, in monitor_site
+    articles = collect_rss_articles(feed_url)
+  File "C:\Users\Manal Ulde\OneDrive\Desktop\Competitor-Content-Intelligence\src\collectors\rss_collector.py", line 22, in collect_rss_articles
+    raise ValueError(
+        f"Could not parse the feed: {feed.bozo_exception}"
+    )
+ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1020)>
+2026-09-28 20:27:52,711 | INFO | Monitoring cycle finished at 2026-09-28T14:57:52.711801+00:00. Sleeping for 60 seconds.
+2026-09-28 20:28:18,779 | INFO | Monitoring stopped by user.
+2026-09-28 20:39:23,007 | INFO | Monitoring started.
+2026-09-28 20:39:23,008 | INFO | Configured feeds: 2 | Interval: 60 seconds
+2026-09-28 20:39:23,008 | INFO | Starting monitoring cycle.
+2026-09-28 20:39:23,010 | INFO | Checking Python Blog: https://blog.python.org/rss.xml
+2026-09-28 20:39:24,907 | INFO | CHECK COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-09-28 20:39:24,908 | INFO | Checking Real Python: https://realpython.com/atom.xml
+2026-09-28 20:39:26,716 | INFO | CHECK COMPLETE | Real Python | retrieved=50 | new=50 | duplicates=0
+2026-09-28 20:39:26,717 | INFO | Monitoring cycle finished at 2026-09-28T15:09:26.717832+00:00. Sleeping for 60 seconds.
+2026-09-28 20:40:11,430 | INFO | Monitoring stopped by user.
+2026-10-03 22:59:04,487 | INFO | Checking RSS | Python Blog RSS | https://blog.python.org/rss.xml
+2026-10-03 22:59:08,445 | INFO | RSS CHECK COMPLETE | Python Blog RSS | retrieved=50 | new=14 | duplicates=36
+2026-10-03 22:59:08,446 | INFO | Checking sitemap | Python Blog Sitemap | https://blog.python.org
+2026-10-03 22:59:44,452 | INFO | SITEMAP CHECK COMPLETE | Python Blog Sitemap | discovered=429 | processed=5 | new=0 | duplicates=5 | errors=0
+2026-10-03 22:59:44,453 | INFO | Checking RSS | Real Python | https://realpython.com/atom.xml
+2026-10-03 22:59:46,213 | INFO | RSS CHECK COMPLETE | Real Python | retrieved=50 | new=15 | duplicates=35
+2026-10-03 23:23:23,857 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-03 23:23:23,858 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-03 23:23:25,385 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:23:25,386 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:23:42,766 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=360 | processed=10 | new=10 | errors=0
+2026-10-03 23:23:42,767 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:23:44,036 | INFO | COMPETITOR CHECK COMPLETE | Python Blog
+2026-10-03 23:23:44,037 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-03 23:23:44,037 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-03 23:23:47,235 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:23:47,236 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-03 23:24:22,273 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-03 23:24:22,274 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-03 23:24:23,855 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:24:23,855 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:24:40,281 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=350 | processed=10 | new=10 | errors=0
+2026-10-03 23:24:40,282 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:24:41,171 | INFO | COMPETITOR CHECK COMPLETE | Python Blog
+2026-10-03 23:24:41,172 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-03 23:24:41,172 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-03 23:24:43,738 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:24:43,738 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-03 23:25:13,521 | INFO | SITEMAP COMPLETE | Real Python | discovered=8715 | unseen=8645 | processed=10 | new=10 | errors=0
+2026-10-03 23:25:13,522 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-03 23:25:14,818 | INFO | COMPETITOR CHECK COMPLETE | Real Python
+2026-10-03 23:25:14,818 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-03 23:25:14,819 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-03 23:25:47,098 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2756 | processed=10 | new=10 | errors=0
+2026-10-03 23:25:47,100 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-03 23:25:49,422 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog
+2026-10-03 23:25:49,423 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-03 23:25:49,424 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-03 23:26:17,651 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1086 | processed=10 | new=10 | errors=0
+2026-10-03 23:26:17,652 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-03 23:30:20,041 | INFO | Competitor monitoring system started.
+2026-10-03 23:30:20,044 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-03 23:30:20,045 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-03 23:30:20,046 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-03 23:30:21,923 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:30:21,923 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:30:41,018 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=340 | processed=10 | new=10 | errors=0
+2026-10-03 23:30:41,019 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:30:42,313 | INFO | COMPETITOR CHECK COMPLETE | Python Blog
+2026-10-03 23:30:42,314 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-03 23:30:42,314 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-03 23:30:44,273 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:30:44,273 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-03 23:31:21,642 | INFO | SITEMAP COMPLETE | Real Python | discovered=8715 | unseen=8635 | processed=10 | new=10 | errors=0
+2026-10-03 23:31:21,644 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-03 23:31:23,186 | INFO | COMPETITOR CHECK COMPLETE | Real Python
+2026-10-03 23:31:23,187 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-03 23:31:23,187 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-03 23:31:56,439 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2745 | processed=10 | new=10 | errors=0
+2026-10-03 23:31:56,440 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-03 23:31:58,644 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog
+2026-10-03 23:31:58,645 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-03 23:31:58,645 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-03 23:32:41,647 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-03 23:32:41,648 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-03 23:32:43,602 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:32:43,603 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:33:03,190 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=330 | processed=10 | new=10 | errors=0
+2026-10-03 23:33:03,191 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:33:04,537 | INFO | COMPETITOR CHECK COMPLETE | Python Blog
+2026-10-03 23:33:04,538 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-03 23:33:04,538 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-03 23:33:06,687 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:33:06,688 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-03 23:33:42,821 | INFO | SITEMAP COMPLETE | Real Python | discovered=8715 | unseen=8625 | processed=10 | new=10 | errors=0
+2026-10-03 23:33:42,823 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-03 23:33:44,347 | INFO | COMPETITOR CHECK COMPLETE | Real Python
+2026-10-03 23:33:44,348 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-03 23:33:44,348 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-03 23:34:20,189 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2757 | unseen=2736 | processed=10 | new=10 | errors=0
+2026-10-03 23:34:20,191 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-03 23:34:21,858 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog
+2026-10-03 23:34:21,858 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-03 23:34:21,859 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-03 23:38:10,963 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-03 23:38:10,964 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-03 23:38:12,910 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:38:12,911 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:38:33,947 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=320 | processed=10 | new=10 | errors=0
+2026-10-03 23:38:33,948 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-03 23:38:35,121 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=10
+2026-10-03 23:38:35,122 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-03 23:38:35,123 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-03 23:38:37,214 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-03 23:38:37,215 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:33:22,366 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 19:33:22,368 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 19:33:35,441 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:33:35,442 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:34:05,402 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=310 | processed=5 | new=5 | errors=0
+2026-10-05 19:34:05,404 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:34:08,397 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 19:34:08,397 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 19:34:08,398 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 19:34:11,875 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=5 | duplicates=45
+2026-10-05 19:34:11,877 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:34:33,890 | INFO | SITEMAP COMPLETE | Real Python | discovered=8722 | unseen=8618 | processed=5 | new=5 | errors=0
+2026-10-05 19:34:33,897 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 19:34:36,118 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8773 | new=10
+2026-10-05 19:34:36,123 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 19:34:36,125 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:35:19,764 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2725 | processed=5 | new=5 | errors=0
+2026-10-05 19:35:19,766 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:35:22,006 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 19:35:22,007 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 19:35:22,010 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:35:54,489 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1076 | processed=5 | new=5 | errors=0
+2026-10-05 19:35:54,493 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:35:56,242 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=6
+2026-10-05 19:35:56,243 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 19:35:56,244 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:36:52,946 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1644 | processed=5 | new=5 | errors=0
+2026-10-05 19:36:52,949 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:36:54,488 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=6
+2026-10-05 19:47:26,458 | INFO | Competitor monitoring system started.
+2026-10-05 19:47:26,479 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 19:47:26,480 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 19:47:26,481 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 19:47:28,457 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:47:28,458 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:47:42,625 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=305 | processed=5 | new=5 | errors=0
+2026-10-05 19:47:42,626 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:47:43,798 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 19:47:43,798 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 19:47:43,799 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 19:47:46,001 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:47:46,002 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:48:06,934 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8613 | processed=5 | new=5 | errors=0
+2026-10-05 19:48:06,937 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 19:48:09,460 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 19:48:09,461 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 19:48:09,461 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:48:35,985 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2720 | processed=5 | new=5 | errors=0
+2026-10-05 19:48:35,987 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:48:37,780 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 19:48:37,781 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 19:48:37,781 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:49:03,259 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1071 | processed=5 | new=5 | errors=0
+2026-10-05 19:49:03,260 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:49:04,770 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 19:49:04,770 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 19:49:04,771 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:50:13,769 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1639 | processed=5 | new=5 | errors=0
+2026-10-05 19:50:13,770 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:50:15,791 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 19:50:15,792 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=169.33 seconds
+2026-10-05 19:50:16,793 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 19:50:16,794 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 19:50:16,794 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 19:50:18,697 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:50:18,697 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:50:32,191 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=300 | processed=5 | new=5 | errors=0
+2026-10-05 19:50:32,192 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:50:33,342 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 19:50:33,342 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 19:50:33,342 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 19:50:35,413 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:50:35,414 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:50:57,097 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8608 | processed=5 | new=5 | errors=0
+2026-10-05 19:50:57,100 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 19:50:59,569 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 19:50:59,569 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 19:50:59,570 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:51:25,092 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2715 | processed=5 | new=5 | errors=0
+2026-10-05 19:51:25,094 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:51:27,241 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 19:51:27,242 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 19:51:27,242 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:51:55,233 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1066 | processed=5 | new=5 | errors=0
+2026-10-05 19:51:55,234 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:51:56,831 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 19:51:56,831 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 19:51:56,832 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:53:06,220 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1634 | processed=5 | new=5 | errors=0
+2026-10-05 19:53:06,221 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:53:08,059 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 19:53:08,059 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=171.27 seconds
+2026-10-05 19:53:09,061 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 19:53:09,062 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 19:53:09,062 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 19:53:11,282 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:53:11,282 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:53:26,935 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=295 | processed=5 | new=5 | errors=0
+2026-10-05 19:53:26,936 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:53:28,738 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 19:53:28,738 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 19:53:28,739 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 19:53:31,271 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:53:31,271 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:53:52,452 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8603 | processed=5 | new=5 | errors=0
+2026-10-05 19:53:52,454 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 19:53:54,486 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 19:53:54,487 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 19:53:54,487 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:54:25,289 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2710 | processed=5 | new=5 | errors=0
+2026-10-05 19:54:25,291 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:54:28,208 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 19:54:28,209 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 19:54:28,209 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:54:52,632 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1061 | processed=5 | new=5 | errors=0
+2026-10-05 19:54:52,633 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:54:53,888 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 19:54:53,888 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 19:54:53,888 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:55:51,917 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1629 | processed=5 | new=5 | errors=0
+2026-10-05 19:55:51,918 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:55:53,648 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 19:55:53,649 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=164.59 seconds
+2026-10-05 19:55:54,650 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 19:55:54,650 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 19:55:54,651 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 19:55:56,388 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:55:56,388 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:56:08,595 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=290 | processed=5 | new=5 | errors=0
+2026-10-05 19:56:08,596 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:56:09,703 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 19:56:09,703 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 19:56:09,704 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 19:56:11,589 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:56:11,589 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:56:31,115 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8598 | processed=5 | new=5 | errors=0
+2026-10-05 19:56:31,118 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 19:56:33,282 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 19:56:33,282 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 19:56:33,283 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:56:55,969 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2705 | processed=5 | new=5 | errors=0
+2026-10-05 19:56:55,971 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:56:58,372 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 19:56:58,373 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 19:56:58,373 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:57:20,970 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1056 | processed=5 | new=5 | errors=0
+2026-10-05 19:57:20,971 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 19:57:22,238 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 19:57:22,239 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 19:57:22,239 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:58:24,235 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1624 | processed=5 | new=5 | errors=0
+2026-10-05 19:58:24,236 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 19:58:25,884 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 19:58:25,885 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=151.24 seconds
+2026-10-05 19:58:26,886 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 19:58:26,886 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 19:58:26,887 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 19:58:28,982 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:58:28,983 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:58:42,215 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=285 | processed=5 | new=5 | errors=0
+2026-10-05 19:58:42,216 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 19:58:43,757 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 19:58:43,757 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 19:58:43,757 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 19:58:46,143 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 19:58:46,144 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 19:59:10,479 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8593 | processed=5 | new=5 | errors=0
+2026-10-05 19:59:10,483 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 19:59:12,232 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 19:59:12,233 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 19:59:12,234 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:59:38,860 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2700 | processed=5 | new=5 | errors=0
+2026-10-05 19:59:38,862 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 19:59:40,749 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 19:59:40,750 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 19:59:40,750 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:00:03,624 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1051 | processed=5 | new=5 | errors=0
+2026-10-05 20:00:03,625 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:00:05,029 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 20:00:05,030 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 20:00:05,030 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:00:53,159 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1619 | processed=5 | new=5 | errors=0
+2026-10-05 20:00:53,161 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:00:54,738 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:00:54,739 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=147.85 seconds
+2026-10-05 20:00:55,740 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:00:55,741 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:00:55,741 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:00:58,882 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:00:58,883 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:01:14,170 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=280 | processed=5 | new=5 | errors=0
+2026-10-05 20:01:14,170 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:01:15,326 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:01:15,327 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:01:15,330 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:01:17,242 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:01:17,243 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:01:38,521 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8588 | processed=5 | new=5 | errors=0
+2026-10-05 20:01:38,523 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:01:40,477 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:01:40,477 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:01:40,478 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:02:08,201 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2695 | processed=5 | new=5 | errors=0
+2026-10-05 20:02:08,203 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:02:10,131 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:02:10,131 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:02:10,132 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:02:30,228 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1046 | processed=5 | new=5 | errors=0
+2026-10-05 20:02:30,228 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:02:31,873 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 20:02:31,874 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 20:02:31,874 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:03:20,402 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1614 | processed=5 | new=5 | errors=0
+2026-10-05 20:03:20,403 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:03:22,047 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:03:22,047 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=146.31 seconds
+2026-10-05 20:03:23,049 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:03:23,049 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:03:23,049 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:03:25,197 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:03:25,198 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:03:39,070 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=275 | processed=5 | new=5 | errors=0
+2026-10-05 20:03:39,071 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:03:40,288 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:03:40,289 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:03:40,289 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:03:43,137 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:03:43,138 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:04:06,336 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8583 | processed=5 | new=5 | errors=0
+2026-10-05 20:04:06,339 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:04:08,674 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:04:08,675 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:04:08,675 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:04:37,869 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2690 | processed=5 | new=5 | errors=0
+2026-10-05 20:04:37,871 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:04:40,415 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:04:40,416 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:04:40,417 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:05:03,591 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1041 | processed=5 | new=5 | errors=0
+2026-10-05 20:05:03,592 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:05:05,197 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 20:05:05,197 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 20:05:05,198 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:05:54,223 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1609 | processed=5 | new=5 | errors=0
+2026-10-05 20:05:54,225 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:05:55,864 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:05:55,865 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=152.82 seconds
+2026-10-05 20:05:56,866 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:05:56,866 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:05:56,867 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:05:58,959 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:05:58,960 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:06:13,779 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=270 | processed=5 | new=5 | errors=0
+2026-10-05 20:06:13,780 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:06:15,125 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:06:15,125 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:06:15,126 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:06:17,286 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:06:17,287 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:06:38,921 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8578 | processed=5 | new=5 | errors=0
+2026-10-05 20:06:38,923 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:06:40,530 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:06:40,530 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:06:40,531 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:07:08,399 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2685 | processed=5 | new=5 | errors=0
+2026-10-05 20:07:08,400 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:07:10,569 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:07:10,570 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:07:10,571 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:07:32,977 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1036 | processed=5 | new=5 | errors=0
+2026-10-05 20:07:32,977 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:07:34,315 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 20:07:34,316 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 20:07:34,316 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:08:28,885 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1604 | processed=5 | new=5 | errors=0
+2026-10-05 20:08:28,886 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:08:30,353 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:08:30,354 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=153.49 seconds
+2026-10-05 20:08:31,355 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:08:31,356 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:08:31,356 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:08:33,699 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:08:33,700 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:08:47,720 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=265 | processed=5 | new=5 | errors=0
+2026-10-05 20:08:47,720 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:08:49,027 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:08:49,028 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:08:49,028 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:08:52,465 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:08:52,466 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:09:14,121 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8573 | processed=5 | new=5 | errors=0
+2026-10-05 20:09:14,123 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:09:15,964 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:09:15,964 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:09:15,965 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:09:41,372 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2680 | processed=5 | new=5 | errors=0
+2026-10-05 20:09:41,374 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:09:43,176 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:09:43,177 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:09:43,177 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:10:05,941 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1031 | processed=5 | new=5 | errors=0
+2026-10-05 20:10:05,942 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:10:07,060 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 20:10:07,060 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 20:10:07,060 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:10:53,133 | INFO | SITEMAP COMPLETE | Docker Blog | discovered=1644 | unseen=1599 | processed=5 | new=5 | errors=0
+2026-10-05 20:10:53,134 | INFO | DIRECT PAGE CHECK | Docker Blog | https://www.docker.com/blog
+2026-10-05 20:10:54,647 | INFO | COMPETITOR CHECK COMPLETE | Docker Blog | found=1645 | new=5
+2026-10-05 20:10:54,648 | INFO | MONITORING CYCLE COMPLETE | competitors=5 | elapsed=143.29 seconds
+2026-10-05 20:10:55,649 | INFO | MONITORING CYCLE START | competitors=5
+2026-10-05 20:10:55,650 | INFO | START COMPETITOR CHECK | Python Blog
+2026-10-05 20:10:55,650 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
+2026-10-05 20:10:57,665 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:10:57,666 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:11:11,539 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=260 | processed=5 | new=5 | errors=0
+2026-10-05 20:11:11,540 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:11:12,860 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:11:12,861 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:11:12,861 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:11:16,638 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:11:16,638 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
+2026-10-05 20:11:39,255 | INFO | SITEMAP COMPLETE | Real Python | discovered=8723 | unseen=8568 | processed=5 | new=5 | errors=0
+2026-10-05 20:11:39,258 | INFO | DIRECT PAGE CHECK | Real Python | https://realpython.com
+2026-10-05 20:11:41,416 | INFO | COMPETITOR CHECK COMPLETE | Real Python | found=8774 | new=5
+2026-10-05 20:11:41,417 | INFO | START COMPETITOR CHECK | Mozilla Blog
+2026-10-05 20:11:41,418 | INFO | SITEMAP CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:12:07,526 | INFO | SITEMAP COMPLETE | Mozilla Blog | discovered=2756 | unseen=2675 | processed=5 | new=5 | errors=0
+2026-10-05 20:12:07,528 | INFO | DIRECT PAGE CHECK | Mozilla Blog | https://blog.mozilla.org
+2026-10-05 20:12:09,190 | INFO | COMPETITOR CHECK COMPLETE | Mozilla Blog | found=2757 | new=5
+2026-10-05 20:12:09,191 | INFO | START COMPETITOR CHECK | GitHub Blog
+2026-10-05 20:12:09,192 | INFO | SITEMAP CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:12:26,766 | INFO | SITEMAP COMPLETE | GitHub Blog | discovered=1086 | unseen=1026 | processed=5 | new=5 | errors=0
+2026-10-05 20:12:26,767 | INFO | DIRECT PAGE CHECK | GitHub Blog | https://github.blog
+2026-10-05 20:12:27,805 | INFO | COMPETITOR CHECK COMPLETE | GitHub Blog | found=1087 | new=5
+2026-10-05 20:12:27,805 | INFO | START COMPETITOR CHECK | Docker Blog
+2026-10-05 20:12:27,807 | INFO | SITEMAP CHECK | Docker Blog | https://www.docker.com/blog

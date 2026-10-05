@@ -1,0 +1,63 @@
+{
+  "sites": [
+    {
+      "name": "Python Blog",
+      "website_url": "https://blog.python.org",
+      "enabled": true,
+      "check_interval": 60,
+      "sources": {
+        "rss": [
+          "https://blog.python.org/rss.xml"
+        ],
+        "sitemap": true,
+        "direct": true
+      }
+    },
+    {
+      "name": "Real Python",
+      "website_url": "https://realpython.com",
+      "enabled": true,
+      "check_interval": 60,
+      "sources": {
+        "rss": [
+          "https://realpython.com/atom.xml"
+        ],
+        "sitemap": true,
+        "direct": true
+      }
+    },
+    {
+      "name": "Mozilla Blog",
+      "website_url": "https://blog.mozilla.org",
+      "enabled": true,
+      "check_interval": 60,
+      "sources": {
+        "rss": [],
+        "sitemap": true,
+        "direct": true
+      }
+    },
+    {
+      "name": "GitHub Blog",
+      "website_url": "https://github.blog",
+      "enabled": true,
+      "check_interval": 60,
+      "sources": {
+        "rss": [],
+        "sitemap": true,
+        "direct": true
+      }
+    },
+    {
+      "name": "Docker Blog",
+      "website_url": "https://www.docker.com/blog",
+      "enabled": true,
+      "check_interval": 60,
+      "sources": {
+        "rss": [],
+        "sitemap": true,
+        "direct": true
+      }
+    }
+  ]
+}
