@@ -542,3 +542,11 @@ ValueError: Could not parse the feed: <urlopen error [SSL: CERTIFICATE_VERIFY_FA
 2026-10-05 20:13:15,239 | INFO | START COMPETITOR CHECK | Python Blog
 2026-10-05 20:13:15,240 | INFO | RSS CHECK | Python Blog | https://blog.python.org/rss.xml
 2026-10-05 20:13:16,995 | INFO | RSS COMPLETE | Python Blog | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:13:16,996 | INFO | SITEMAP CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:13:28,763 | INFO | SITEMAP COMPLETE | Python Blog | discovered=429 | unseen=255 | processed=5 | new=5 | errors=0
+2026-10-05 20:13:28,764 | INFO | DIRECT PAGE CHECK | Python Blog | https://blog.python.org
+2026-10-05 20:13:30,408 | INFO | COMPETITOR CHECK COMPLETE | Python Blog | found=480 | new=5
+2026-10-05 20:13:30,409 | INFO | START COMPETITOR CHECK | Real Python
+2026-10-05 20:13:30,409 | INFO | RSS CHECK | Real Python | https://realpython.com/atom.xml
+2026-10-05 20:13:33,391 | INFO | RSS COMPLETE | Real Python | retrieved=50 | new=0 | duplicates=50
+2026-10-05 20:13:33,392 | INFO | SITEMAP CHECK | Real Python | https://realpython.com
